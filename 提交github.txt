@@ -1,0 +1,15 @@
+echo "# studyweb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:violet-zky/studyweb.git
+git push -u origin main
+
+git remote add origin git@github.com:violet-zky/studyweb.git
+git branch -M main
+git push -u origin main
+
+
+github API token：
+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
