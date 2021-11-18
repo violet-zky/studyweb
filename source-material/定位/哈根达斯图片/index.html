@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈根达斯图片</title>
+    <style>
+        div {
+            width: 310px;
+            height: 190px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .topIcon {
+            /*孩子加了绝对定位，如果父亲没有定位，以浏览器为准*/
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /*位偏移*/
+        }
+        
+        .bottomIcon {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <img src="images/top_tu.jpg" alt="今日新增" class="topIcon">
+        <img src="images/adv.jpg" alt="哈根达斯">
+        <img src="images/br.jpg" alt="今日新单" class="bottomIcon">
+
+    </div>
+</body>
+
+</html>
