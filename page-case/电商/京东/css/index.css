@@ -1,0 +1,186 @@
+.grid {
+    height: 480px;
+    /* background-color: pink; */
+}
+
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    font-size: 14px;
+    color: #fff;
+    /*不是给字的，是给/的*/
+}
+
+.grid-col1 a {
+    font-size: 14px;
+    color: #fff;
+    /*是给链接文字的*/
+    margin: 0 3px;
+}
+
+.grid-col1 ul {
+    padding: 15px 0;
+}
+
+.grid-col1 ul li {
+    padding-left: 12px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.grid-col1 ul li:hover {
+    background-color: #9c9698;
+}
+
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    /* background-color: purple; */
+    margin-left: 10px;
+}
+
+
+/* banner部分 */
+
+img {
+    /* 解决图片底侧有空白缝隙问题，原因：图片是基线对齐 */
+    /* display: block; */
+    vertical-align: top;
+    /*任意一个属性都可以(提倡使用)*/
+}
+
+.grid-col2-b div {
+    float: left;
+    margin-top: 10px;
+}
+
+.grid-col2-b div:last-child {
+    float: right;
+    margin-top: 10px;
+}
+
+
+/* 箭头部分 */
+
+.grid-col2-t {
+    position: relative;
+}
+
+.arrow-l, .arrow-r {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .7);
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.arrow-l {
+    left: 0;
+}
+
+.circle {
+    width: 167px;
+    height: 20px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+.circle li {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    cursor: pointer;
+    /*小手鼠标*/
+}
+
+.circle .current {
+    background-color: #f10215;
+}
+
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+.login {
+    height: 85px;
+    border-bottom: 1px solid black;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.login-t {
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    /* 强制一行内显示 */
+    overflow: hidden;
+    /* 溢出内容隐藏 */
+    text-overflow: ellipsis;
+    /* 超出的部分显示省略号 */
+    color: #666;
+    padding-left: 60px;
+    /* 这里给padding 把文字挤过来 */
+    position: relative;
+}
+
+.login-t a {
+    color: #666;
+}
+
+.login-t a:hover {
+    color: #f10215;
+}
+
+.user-info {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* border-radius: 50%;
+    overflow: hidden; */
+    background: url(../images/sprite_userinfo@1x.png) no-repeat;
+    background-position: -70px 0;
+}
+
+.user-info img {
+    width: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.news {
+    height: 154px;
+    border-bottom: 1px solid black;
+    background-color: purple;
+}
+
+.expand {
+    height: 209px;
+    background-color: skyblue;
+}
